@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<title>Report - Jews</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i  class="fas fa-bars"></i>
+		</label>
+		<label class="logo">Jews</label>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="news.html">News</a></li>
+            <li><a href="report.html">Report</a></li>
+            <li class="active"><a class="active" href="create.html">Post</a></li>
+            <li><a href="#">Maps</a></li>
+		</ul>
+	</nav>
+
+	<section id="intro">
+
+		<div class="box">
+            <main role="main">
+                <div class="container">
+                  <div class="card m-4">
+                    <div class="card-body">
+                      <h2 class="pt-4" style="color: white;">Create Post</h2>
+                      <div class="form-group">
+                        <p style="color: white;">
+                            Name
+                        </p>
+                        <label for="Author"></label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Name"
+                          id="author"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <p style="color: white;">
+                            Title
+                        </p>
+                        <label for="Post Title"></label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Title"
+                          id="postTitle"
+                        />
+                      </div>
+                      <div class="form-group">
+                          <p style="color: white;">
+                              Messsage
+                          </p>
+                        <label for="Post Content"></label>
+                        <textarea
+                          id="postContent"
+                          cols="30"
+                          rows="10"
+                          class="form-control"
+                          id="postContent"
+                          placeholder="Message/Information you want to share"
+                        ></textarea>
+                      </div>
+                      <div class="form-group">
+                        <p style="color: white;">
+                            Date
+                        </p>
+                        <label for="Date"></label>
+                        <input type="date" class="form-control" id="postDate" />
+                      </div>
+                      <input
+                        type="submit"
+                        value="Post"
+                        class="btn btn-primary"
+                        id="submitBtn"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- /container -->
+              </main>
+	</div>
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+    ></script>
+
+	</section>
+	<script src="three.js"></script>
+    <script src="vanta.js"></script>
+    <script src="app.js"></script>
+    <script src="create.js"></script>
+
+</body>
+</html>

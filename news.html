@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<title>News - Jews</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i  class="fas fa-bars"></i>
+		</label>
+		<label class="logo">Jews</label>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li class="active"><a href="news.html" class="active">News</a></li>
+      <li><a href="report.html">Report</a></li>
+      <li><a href="create.html">Post</a></li>
+      <li><a href="#">Maps</a></li>
+		</ul>
+	</nav>
+
+	<section id="intro">
+
+		<div class="box">
+      <main role="main">
+        <!-- JUMBOTRON -->
+        <div class="jumbotron">
+          <div class="container">
+            <h1 style="color:white">News</h1>
+            <p style="color: white;">
+              Here are the latest posts about what is happening during the holocaust. Click "Post" at the top to share information to others. 
+            </p>
+            <br>
+            <br>           
+          </div>
+        </div>
+  
+        <div class="container">
+          <!-- Example row of columns -->
+          <div class="row" id="posts-collection" style="color:white"></div>
+  
+          <hr />
+        </div>
+        <!-- /container -->
+      </main>
+	</div>
+	
+
+    </section>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+    ></script>
+
+	  <script src="three.js"></script>
+    <script src="vanta.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
