@@ -7,9 +7,9 @@ VANTA.DOTS({
     scale: 1.00,
     scaleMobile: 1.00,
     color: 0x20fffc,
+    
     color2: 0x20f4ff
   })
-
 // Your web app's Firebase configuration
 var firebaseConfig = {
   apiKey: "AIzaSyDTTXqA-yk2_VkIKGYuq-AT0upAqSV59MM",
@@ -31,9 +31,9 @@ function createPost(title, time, content) {
   let div = document.createElement("div");
   div.setAttribute("class", "col-md-4");
 
-  let h2 = document.createElement("h2");
+  let h2 = document.createElement("h1");
   let p = document.createElement("p");
-  let small = document.createElement("small");
+  let small = document.createElement("h4");
 
   h2.textContent = title;
   small.textContent = time;

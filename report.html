@@ -1,108 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>Jews</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="news.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <style>
-            .register .nav-tabs .nav-link:hover{
-                border: none;
-            }
-            .text-align{
-                margin-top: -3%;
-                margin-bottom: -9%;
-
-                padding: 10%;
-                margin-left: 30%;
-            }
-            .form-new{
-                margin-right: 22%;
-                margin-left: 20%;
-            }
-            .register-heading{
-                margin-left: 21%;
-                margin-bottom: 10%;
-                color: #e9ecef;
-            }
-            .register-heading h1{
-                margin-left: 21%;
-                margin-bottom: 10%;
-                color: #e9ecef;
-            }
-            .register{
-                background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
-                margin-top: 3%;
-                padding: 3%;
-                border-radius: 2.5rem;
-            }
-            .btnSubmit
-            {
-                width: 50%;
-                border-radius: 1rem;
-                padding: 1.5%;
-                color: #fff;
-                background-color: #03612e;
-                border: none;
-                cursor: pointer;
-                margin-right: 6%;
-                color: rgb(246, 246, 252);
-                margin-top: 4%;
-            }
-    </style>
-
 </head>
 <body>
-    
-<div class="container register">
-            <div class="row">
-                <div class="col-md-12">
-                        <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <h3 class="register-heading">Nazi Alert!</h3>
-                            <div class="row register-form">
-                                <div class="col-md-12">
-                                    <form method="post" autocomplete="off" name="google-sheet">
-                                        <div class="form-group">
-                                            <input type="text" name="Location" class="form-control" placeholder="Location *" value="" required=""/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" name="Display" class="form-control" placeholder="Enter Location again *" value="" required=""/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" name="Info" class="form-control" placeholder="Info *" value="" required=""/>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <input type="number" name="Latitude" class="form-control" placeholder="Latitude" value=""/>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <input type="number" name="Longitude" class="form-control" placeholder="Longitude" value=""/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-          
-          <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwf2zjn34VX_J_HghxxdA9UKvuz6jHui8DcCe-2zC5bbTiznKg/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i  class="fas fa-bars"></i>
+		</label>
+		<label class="logo">Jews</label>
+		<ul>
+			<li ><a href="index.html">Home</a></li>
+			<li><a href="news.html">News</a></li>
+      		<li><a class="active" href="report.html">Report</a></li>
+      		<li><a href="create.html">Post</a></li>
+      		<li><a href="maps.html">Maps</a></li>
+		</ul>
+	</nav>
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<section id="intro">
+
+		<div class="box">
+
+            
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="register-heading">Nazi Alert!</h3>
+                    <div class="row register-form">
+                        <div class="col-md-12">
+                            <form method="post" autocomplete="off" name="google-sheet">
+                                <div class="form-group">
+                                    <input type="text" name="Location" class="form-control" placeholder="Location *" value="" required=""/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="Display" class="form-control" placeholder="Enter Location again *" value="" required=""/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="Info" class="form-control" placeholder="Info *" value="" required=""/>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="number" name="Latitude" class="form-control" placeholder="Latitude" value=""/>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="number" name="Longitude" class="form-control" placeholder="Longitude" value=""/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+	</div>
+	
+
+	</section>
+	<script src="three.js"></script>
+    <script src="vanta.js"></script>
+    <script src="app.js"></script>
+
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwf2zjn34VX_J_HghxxdA9UKvuz6jHui8DcCe-2zC5bbTiznKg/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for telling this info! We will verify and update it in our map soon!"))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </body>
 </html>
