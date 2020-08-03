@@ -27,21 +27,24 @@ let postCollection = document.querySelector("#posts-collection");
 
 const db = firebase.firestore();
 
-function createPost(title, time, content) {
+function createPost(title, time, content,space) {
   let div = document.createElement("div");
   div.setAttribute("class", "col-md-4");
 
   let h2 = document.createElement("h1");
   let p = document.createElement("p");
   let small = document.createElement("h4");
+  let large=document.createElement("br");
 
   h2.textContent = title;
   small.textContent = time;
   p.textContent = content;
+  large.textContent=space;
 
   div.appendChild(h2);
   div.appendChild(small);
   div.appendChild(p);
+  div.appendChild(large);
 
   postCollection.appendChild(div);
 }
